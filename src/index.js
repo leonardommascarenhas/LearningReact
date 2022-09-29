@@ -1,26 +1,15 @@
 import React from "react";
+import App from "./App.js";
 import { render } from "react-dom";
 
-import { Header } from "./components/Header";
-import { Home } from "./components/Home";
-
-class App extends React.Component {
+class Tentativa extends React.Component {
   render() {
     return (
       <div className="container">
-        <div className="row">
-          <div className="col-xs-10 col-xs-offset-1">
-            <Header />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-xs-10 col-xs-offset-1">
-            <Home />
-          </div>
-        </div>
+        <App />
       </div>
     );
   }
 }
 
-render(<App />, window.document.getElementById("root"));
+render(<Tentativa />, window.document.getElementById("root"));
